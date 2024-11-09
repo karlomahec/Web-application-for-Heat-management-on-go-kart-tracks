@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Karting Arena Zagreb</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/logoKAZ_neg.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/logoKAZ_neg.png" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Atkinson Hyperlegible' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <!-- Slick Carousel JS -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="mobile.js"></script>
+</head>
+    <body>
+      <header>
+        <a class="logo" href="index.html"><img src="img/logoKAZ_neg.png" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><b><a href="index.html">Početna</a></b></li>
+                <li><b><a href="cjenik.html">Cjenik</a></b></li>
+                <li><b><a href="onama.html">O nama</a></b></li>
+                <li><b><a href="dostupnost.html">Dostupnost</a></b></li>
+                <li><b><a href="natjecanja.html">Natjecanja</a></b></li>
+            </ul>
+        </nav>
+        <b><a class="cta" href="prijava.html">Prijava</a></b>
+        <p class="menu cta">Menu</p>
+    </header>
+    <div class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <b><a href="index.html">Početna</a></b>
+            <b><a href="cjenik.html">Cjenik</a></b>
+            <b><a href="onama.html">O nama</a></b>
+            <b><a href="dostupnost.html">Dostupnost</a></b>
+            <b><a href="natjecanja.html">Natjecanja</a></b>
+            <b><a class="cta" href="prijava.html" style="color: black;">Prijava</a></b>
+        </div>
+    </div>
+        <script type="text/javascript" src="mobile.js"></script>
+        
+        <div class="carousel">
+          <div class="image-wrapper">
+            <div class="image-description">10-minutna<br>vožnja</div>
+            <div class="image" style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 70%),url(img/indivi.jpg);background-size: cover;"></div>
+          </div>
+          <div class="image-wrapper">
+            <div class="image-description">Grand Prix<br>Advanced</div>
+            <div class="image" style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 70%),url(img/gpa.jpg);background-size: cover;"></div>
+          </div>
+          <div class="image-wrapper">
+            <div class="image-description">Mini Grand<br>Prix</div>
+            <div class="image" style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 70%),url(img/mgp.jpg);background-size: cover;"></div>
+          </div>
+          <div class="image-wrapper">
+            <div class="image-description">10-minutna<br>vožnja</div>
+            <div class="image" style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 70%),url(img/indivi.jpg);background-size: cover;"></div>
+          </div>
+          <div class="image-wrapper">
+            <div class="image-description">Grand Prix<br>Advanced</div>
+            <div class="image" style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 70%),url(img/gpa.jpg);background-size: cover;"></div>
+          </div>
+          <div class="image-wrapper">
+            <div class="image-description">Mini Grand<br>Prix</div>
+            <div class="image" style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 70%),url(img/mgp.jpg);background-size: cover;"></div>
+          </div>
+        </div>
+        
+        <script>
+          $(document).ready(function() {
+            $('.carousel').slick({
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              autoplay: true,
+              autoplaySpeed: 5000,
+              centerMode: true,
+              centerPadding: '0px',
+              prevArrow: '',
+              nextArrow: '',
+              responsive: [
+                {
+                  breakpoint: 1000,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+              ]
+            });
+          });
+        </script>
+        
+        <div class="container">
+          <div class="left-segment">
+            <div class="schedule-container">
+                <div class="schedule-title">
+                    <h2>Raspored danas</h2>
+                </div>
+                <div class="schedule">
+                    <div class="time">9:00 AM</div>
+                    <div class="line"></div>
+                    <div class="info">
+                        <p>Drivers: 5</p>
+                        <p>Free Spaces: 3</p>
+                    </div>
+                </div>
+                <div class="schedule">
+                    <div class="time">9:15 AM</div>
+                    <div class="line"></div>
+                    <div class="info">
+                        <p>Drivers: 4</p>
+                        <p>Free Spaces: 2</p>
+                    </div>
+                </div>
+                <div class="schedule">
+                    <div class="time">9:30 AM</div>
+                    <div class="line"></div>
+                    <div class="info">
+                        <p>Drivers: 3</p>
+                        <p>Free Spaces: 1</p>
+                    </div>
+                </div>
+                <div class="schedule">
+                  <div class="time">10:00 AM</div>
+                  <div class="line"></div>
+                  <div class="info">
+                      <p>Drivers: 3</p>
+                      <p>Free Spaces: 1</p>
+                  </div>
+                </div>
+                <div class="schedule">
+                  <div class="time">10:00 AM</div>
+                  <div class="line"></div>
+                  <div class="info">
+                      <p>Drivers: 3</p>
+                      <p>Free Spaces: 1</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+          <div class="middle-segment">
+              <h2>Trenutna konfiguracija</h2>
+              <img src="img/konfa.png" alt="Image">
+          </div>
+          <div class="right-segment">
+              <h2 style="text-align: center;">Top vozači</h2>
+              <div class="leaderboard">
+                  <p>1. Driver A <span class="best-time">Best Time: 1:30</span></p>
+                  <p>2. Driver B <span class="best-time">Best Time: 1:45</span></p>
+                  <p>3. Driver C <span class="best-time">Best Time: 2:00</span></p>
+                  <p>4. Driver A <span class="best-time">Best Time: 1:30</span></p>
+                  <p>5. Driver B <span class="best-time">Best Time: 1:45</span></p>
+                  <p>6. Driver C <span class="best-time">Best Time: 2:00</span></p>
+                  <p>7. Driver A <span class="best-time">Best Time: 1:30</span></p>
+                  <p>8. Driver B <span class="best-time">Best Time: 1:45</span></p>
+                  <p>9. Driver C <span class="best-time">Best Time: 2:00</span></p>
+                  <p>10. Driver C <span class="best-time">Best Time: 2:00</span></p>
+                  <p>11. Driver C <span class="best-time">Best Time: 2:00</span></p>
+                  <p>12. Driver A <span class="best-time">Best Time: 1:30</span></p>
+                  <p>13. Driver B <span class="best-time">Best Time: 1:45</span></p>
+                  <p>14. Driver C <span class="best-time">Best Time: 2:00</span></p>
+                  <p>15. Driver C <span class="best-time">Best Time: 2:00</span></p>
+              </div>
+          </div>
+      </div>
+
+      <div class="container2">
+        <div class="left">
+          <div class="title">Raspored vožnji</div>
+          <div class="top-left" style="margin-top: 30px;">
+            <p>Vožnje za odrasle:</p>
+            <p>PON – ČET: 16:00 – 23:00</p>
+            <p>PET: 14:00 – 23:00</p>
+            <p>SUB/NED: 13:00 – 23:00</p>
+          </div>
+          <div class="bottom-right" style="margin-bottom: 30px;">
+            <p>Dječje vožnje:</p>
+            <p>UTO/ČET: 14:00 – 16:00</p>
+            <p>SUB/NED: 09:00 – 13:00</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="title">Hotlap - Tutorial</div>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/watch?v=d8Y2agfhRl4" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+        <footer class="page-footer">
+            <div class="center-content">
+                <i class="fa fa-phone"></i><b style="margin-right: 5px;">Telefon:</b> 01 5814 721<br>
+                <i class="fa fa-envelope"></i><b style="margin-right: 5px;">E-mail: </b> info@karting-arena.com<br>
+                <i class="fa fa-map-marker"></i><b style="margin-right: 5px;">Lokacija:</b> Zagrebački Velesajam p.35
+            </div>
+        
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        
+            <div class="nav__links" style="justify-content: center; margin-top: 10px;">
+              <a href="#" >Terms of Service</a> ||
+              <a href="#"style="margin-left:20px ;">Privacy Policy</a> ||
+              <a href="#"style="margin-left:20px ;">Copyright</a>
+            </div>
+          </footer>
+    </body>
+</html>

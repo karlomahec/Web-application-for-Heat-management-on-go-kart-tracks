@@ -1,0 +1,492 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  body {
+    font-family: 'Atkinson Hyperlegible';font-size: 22px;
+    background-color: #1f2029;
+    background-image: url(img/image-fotor-2023081095851.png);
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5%;
+    background-color: black;
+    
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font:bold;
+    font:italic;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav__links {
+    
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: color 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: gray;
+  }
+  
+  .cta {
+    color: black;
+    padding: 9px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: gray;
+  }
+
+  .userbox i{
+    color: black;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease 0s;
+  }
+
+  footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: black;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+
+   .center-content {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .center-content i {
+    margin-right: 10px;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    color: black;
+    display: inline-block;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+  .social-icons a:hover{
+    background-color: gray;
+  }
+
+  .title{
+    padding: 20px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+  }
+
+  .subtitle{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    padding: 10px;
+  }
+
+  .description{
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+  }
+
+  .competitioncontainer{
+    width: 65%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 2;
+  }
+
+  .overlay_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: none; /* Set initial backdrop-filter to none */
+    pointer-events: none;
+    transition: backdrop-filter 0.5s;
+    z-index: 1;
+  }
+
+  .competitioncontainer.hovered  {
+    transform: scale(1.1);
+    filter: none;
+    z-index: 3;
+  }
+  
+  .competitioncontainer.hovered ~ .competitioncontainer {
+    filter: blur(5px);
+    z-index: 2;
+  }
+  
+  .competitioncontainer.hovered ~ .overlay_container {
+    backdrop-filter: blur(5px);
+    z-index: 2;
+  }
+  
+  .competitioncontainer img {
+    width: 50%;
+  }
+
+  .glow-button-blue{
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .glow-button-blue:hover {
+    background-color: rgb(0, 153, 255);
+    box-shadow: 0 0 10px 5px rgba(0, 153, 255,0.5); /* Add a red glow effect on hover */
+  }
+
+  .glow-button-red{
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .glow-button-red:hover {
+    background-color: red;
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5); /* Add a red glow effect on hover */
+  }
+
+  .glow-button-orange{
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .glow-button-orange:hover {
+    background-color: orange;
+    box-shadow: 0 0 10px 5px rgba(255, 145, 0,0.5); /* Add a red glow effect on hover */
+  }
+
+  .glow-button-pink{
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .glow-button-pink:hover {
+    background-color: rgb(255, 0, 76);
+    box-shadow: 0 0 10px 5px rgba(255, 0, 76,0.5); /* Add a red glow effect on hover */
+  }
+
+  .competitioncontainer button{
+    border-radius: 20px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 15px;
+    font-size: 20px;
+    color: black;
+    border: 0px;
+  }
+
+  .hovered .overlay_container {
+    backdrop-filter: none;
+  }
+
+  .competitiontitle{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .competitiondesc{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  @keyframes slider{
+    100%{
+      transform: translateY(-20px);
+    }
+  }
+  
+  .dropdown {
+    position: absolute;
+    display: none;
+    background-color: black;
+    padding: 10px;
+    margin-top: 10px;
+    left: 0;
+    right: 0;
+    text-align: left;
+    z-index: -1;
+    padding-left: 30px;
+    top: 100%; /* Change top position to be below text-container */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth slide */
+    transform: translateY(-70px); /* Initially hide dropdown above text-container */
+    animation-name: slider;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  .subButton{
+    padding-left: 30px;
+    padding-right: 30px;
+    z-index: -1;
+  }
+  
+  .competitioncontainer:hover .dropdown,
+  .dropdown:hover {
+    display:flex;
+    justify-content: center;
+    z-index: -1;
+  }
+
+  .competitioncontainer:hover .subButton{
+    z-index: -1;
+  }
+
+  .junior{
+    object-fit:contain;
+    max-height: 300px;
+    width: 300%;
+  }
+
+  .mini{
+    object-fit:contain;
+    max-height: 300px;
+    width: 200%;
+  }
+
+  /* Mobile Nav */
+  
+  .menu {
+    display: none;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 4 ;
+    left: 0;
+    top: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+  }
+  
+  .overlay--active {
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: gray;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 10%;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+  }
+
+  @media screen and (min-width: 1500px) {
+    .center-content i{
+        margin-left: 50px;
+    }
+    .nav__links,
+    .cta {
+      font-size: 20px;
+    }
+    }
+
+  @media screen and (max-width: 1500px) {
+    .container2{
+      display: inline;
+      font-size: 15px;
+    }
+    .top-left {
+      position:static;
+      left: 0px;
+      top: 50%;
+    }
+    
+    .bottom-right {
+      margin-left: 20px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
+    .left{
+      margin-left: 10px;
+      margin-bottom: 50px;
+    }
+    .left::before{
+      content: "";
+      position: absolute;
+      top: 35%;
+      width: 1px;
+      left: 50%;
+      right: inherit;
+      height: 60%;
+      background-color: white;
+      transform: rotate(0deg);
+      transform-origin: 0 0;
+    }
+    .right{
+      margin-right: 10px;
+    }
+    .center-content {
+        display: inline-block;
+        font-size: 15px;
+        text-align: center;
+    }
+    .container{
+      display: inline-block;
+    }
+    .line{
+      width:8%;
+    }
+    .center-content {
+        display: inline-block;
+        font-size: 25px;
+        justify-content: center;
+    }
+    }
+  
+  @media screen and (max-height: 450px) {
+    .center-content {
+        display: inline-block;
+        font-size: 15px;
+        text-align: center;
+    }
+    .center-content i{
+        padding-right:10px;
+        padding-left: 5px;
+    }
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .userbox {
+      margin: auto;
+    }
+
+    .carousel{
+      padding-left: 5px;
+      justify-content: center;
+    }
+    .nav__links,
+    .cta {
+      display: none;
+    }
+    .menu {
+      display: initial;
+    }
+    .competitiontitle{
+      display: block;
+    }
+    .competitiontitle img{
+      width: 100%;
+    }
+    .competitiondesc{
+      display: block;
+    }
+    .competitiondesc img{
+      width: 100%;
+    }
+    .competitiondesc .description{
+      font-size: 15px;
+    }
+    .mini{
+      width:100%;
+    }
+    .junior{
+      width: 100%;
+    }
+    .center-content{
+      font-size: 15px;
+    }
+  }
+  

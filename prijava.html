@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Karting Arena Zagreb</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/logoKAZ_neg.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/logoKAZ_neg.png" type="image/x-icon"> 
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Atkinson Hyperlegible' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<a class="logo" href="index.html"><img src="img/logoKAZ_neg.png" alt="logo"></a>
+		<nav>
+			<ul class="nav__links">
+				<li><b><a href="index.php">Početna</a></b></li>
+				<li><b><a href="cjenik.html">Cjenik</a></b></li>
+				<li><b><a href="onama.html">O nama</a></b></li>
+				<li><b><a href="dostupnost.html">Dostupnost</a></b></li>
+				<li><b><a href="natjecanja.html">Natjecanja</a></b></li>
+			</ul>
+		</nav>
+		<b><a class="cta" href="prijava.html">Prijava</a></b>
+		<p class="menu cta">Menu</p>
+	</header>
+	<div class="overlay">
+		<a class="close">&times;</a>
+		<div class="overlay__content">
+			<b><a href="index.php">Početna</a></b>
+			<b><a href="cjenik.html">Cjenik</a></b>
+			<b><a href="onama.html">O nama</a></b>
+			<b><a href="dostupnost.html">Dostupnost</a></b>
+			<b><a href="natjecanja.html">Natjecanja</a></b>
+			<b><a class="cta" href="prijava.html" style="color: black;">Prijava</a></b>
+		</div>
+	</div>
+	<script type="text/javascript" src="mobile.js"></script>
+
+	<div class="section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 text-center align-self-center py-5">
+					<div class="section text-center">
+						<h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+			          	<label for="reg-log"></label>
+						<div class="card-3d-wrap mx-auto">
+							<div class="card-3d-wrapper">
+								<div class="card-front">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">Log In</h4>
+											<form action="login.php" method="post">
+											<div class="form-group">
+												<input type="email" class="form-style" id="loginEmail" name="loginEmail" placeholder="Email">
+												<i class="input-icon uil uil-at"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="password" class="form-style" id="loginPassword" name="loginPassword" placeholder="Password">
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<input type="submit" class="btn mt-4" value="Login">
+											</form>
+				      					</div>
+			      					</div>
+			      				</div>
+								<div class="card-back">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-3 pb-3">Sign Up</h4>
+											<form action="register.php" method="post">
+											<div class="form-group">
+												<input type="text" class="form-style" name="fullName"  placeholder="Full Name">
+												<i class="input-icon uil uil-user"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="tel" class="form-style" name="phoneNumber" placeholder="Phone Number">
+												<i class="input-icon uil uil-phone"></i>
+											</div>	
+                      						<div class="form-group mt-2">
+												<input type="email" class="form-style" name="mail" placeholder="Email">
+												<i class="input-icon uil uil-at"></i>
+											</div>
+											<div class="form-group mt-2">
+												<input type="password" class="form-style" name="pw" placeholder="Password">
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<div class="form-group mt-2">
+												<input type="date" class="form-style" name="dateOfBirth" placeholder="">
+												<i class="input-icon uil uil-calendar-alt"></i>
+											</div>
+											<input type="submit" class="btn mt-4" value="Register">
+											</form>
+				      					</div>
+			      					</div>
+			      				</div>
+			      			</div>
+			      		</div>
+			      	</div>
+		      	</div>
+	      	</div>
+	    </div>
+	
+		<!-- Popup container for unsuccessful login -->
+		<div class="popup-container" id="popupError">
+			<div class="popup-content">
+				<img src="img/wrong.png" style="width: 30%;margin-top: 25px;">
+				<p style="color: black; margin-top: 10px;">Login unsuccessful. Please try again.</p>
+				<p class="close-button" onclick="closePopup('popupError')"><a class="close" style="font-size: 40px;">&times;</a></p>
+			</div>
+		</div>
+
+		<!-- Backdrop element -->
+		<div class="backdrop" id="backdrop"></div>
+	</div>
+
+	<script>
+		// Function to check if the URL has the 'login_error' parameter
+		function getUrlParameter(name) {
+			name = name.replace(/[[]/, '\\[').replace(/[\]]/, '\\]');
+			var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+			var results = regex.exec(location.search);
+			return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+		}
+	
+		// Function to show the popup if the login attempt failed
+		function checkLoginError() {
+			var loginError = getUrlParameter('login_error');
+			if (loginError === '1') {
+				openPopup('popupError');
+			}
+		}
+	
+		function openPopup(popupId) {
+			var popup = document.getElementById(popupId);
+			popup.style.display = "block";
+			document.getElementById("backdrop").style.display = "block";
+			document.body.classList.add("blur-effect");
+		}
+	
+		function closePopup(popupId) {
+			var popup = document.getElementById(popupId);
+			popup.style.display = "none";
+			document.getElementById("backdrop").style.display = "none";
+			document.body.classList.remove("blur-effect");
+		}
+	
+		// Check for login error on page load
+		window.onload = function() {
+			checkLoginError();
+		};
+	</script>
+
+	<footer class="page-footer">
+		<div class="center-content">
+			<i class="fa fa-phone"></i><b style="margin-right: 5px;">Telefon:</b><a> 01 5814 721</a><br>
+			<i class="fa fa-envelope"></i><b style="margin-right: 5px;">E-mail: </b> <a>info@karting-arena.com</a><br>
+			<i class="fa fa-map-marker"></i><b style="margin-right: 5px;">Lokacija:</b><a> Zagrebački Velesajam p.35</a>
+		</div>
+	
+		<div class="social-icons">
+		  <a href="#"><i class="fa fa-facebook"></i></a>
+		  <a href="#"><i class="fa fa-twitter"></i></a>
+		  <a href="#"><i class="fa fa-instagram"></i></a>
+		</div>
+	
+		<div class="nav__links" style="justify-content: center; margin-top: 10px;">
+		  <a href="#" >Terms of Service</a> ||
+		  <a href="#"style="margin-left:20px ;">Privacy Policy</a> ||
+		  <a href="#"style="margin-left:20px ;">Copyright</a>
+		</div>
+	  </footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "seismic-relic-390010",
+  "private_key_id": "69423f3e809f50b32bbb5da92eaab0c713e13b21",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC18MiV8OQmzt5k\nG5aGlM0nehkL5kmK8dSGQc7MdUk8pduYCHukShLHMULXY+YB80QJs6L9MqUUh/eZ\nG7vBdkKsDnxTaWA9vZ6QDiFW35z3PboroXCsjstp275I6ANemkmtVnVDL6a6mfhV\nVHh2Mxd57ew4sMxbxKfBJXX/YXx4iaA94BL7FUgAzsbbqBhw9SGgFDwzog4hATby\nIiLoLbz9LHypwDtSOXJ/E4vxq6cPcCurmg5+HHJN50pYVQa8ygNohTIvz/xlfJep\nPcUwav0h8Nmy4XejOqOo61vnclHcAXdSrRpW84gs4P5qq52ZOY1j4lXhP+NUhMLr\nt0LiLt01AgMBAAECggEAAt4luz9NyVLPbJKGv95OkYW6KVba5+bB68/Tu6NJoTwY\nBwBzOna0bxFWtWBsurEj7Gc5dXY75ePywiYOwpDjoiSkTwhFLRP1EN44Jk9mAPun\nGJL13LJvgF6nVCzcCLyz1pibRpDUtvJAWM/5ChvqDdDzPT2EKxohbsjxYDIgLSIv\nYYhO2P3pPe9nyk/kau12aa0y0MSwPIkFXA2j4GKoivuGCznOhpmoj0hFpyP8aYL6\nD9hgnv8+Cd9UECNWEGwsZbbSx3PJDzW/P3tND+hu9MKOkvCuZkXJbHGmSrN0ysYC\njLvjukwH2TbtyS9VYdKuidnwhdijFhpc0ze7JSBNLQKBgQDqxa2wLxpOrS4BnqNc\n9wPFyuiZgN37ONlJx7FbArsbtK3pLdA0i3NCEFLo/OKErfgBm/YVfvFBhOm7lTvi\n5zn9USXsn/35DtJuBpTUjjf1ignvyVMVNeUZiCRbxhDtMSEtyz7wIXrMjcZOYIG+\n9kEtSNcDrfjoSri4g00HYecj5wKBgQDGZDNIdBA6irta/iaAyYX3rZ2C/D5/Jkuj\ni1bG5g8F/ORso2DY1BxkPfkn7yzemh/MLkL1bzfSFrcxN7kuzFWVHMUBGDr2c/Sk\nvwX8ei1dC0KGaZ3pv9AJ8mqg4UHMMzoqnWCrB683uDB+8VoN7opAv3q/ivdyThWp\nXZ7tuGzSgwKBgQClQ96OpbnJJJO8RCYPrTsUo0+1r0eUL2KWU2KABJ4eVMQP31Yv\nhvLt0Hvs0wfKCoUI7PcADspaKuw2RklP4yGpNtSRi9bG2i47kZp3Pl4aFMAF8hzw\nU24g2PtvNzB3KByJFggKFidRk4PDbKApA0TCUgI57t/G9cKu8I7q4XpKhQKBgC6l\nRo2FhH9POSf207S6LT6D2qH+ju80YNpuG5QeaW/d+xM0AsRYcuh6zcc+7AzWrh1C\nz0mHwdcqsh3nXSoMrx6lKgjM2qgxsVa+9zhavam/yP9ze8aG6/I6xilXbTIG5Wk5\noY30+5SdQQHH24WlDWqV2tWIZg/BHkS5F3ILR8LjAoGBALQNou6lKC85Q81cp4aq\nPZ6fyYRJKkX/boVQqzD4/O2oUJllmkTLEdP15ExpBiDllxZFk89VVm10mID8C8qE\nPrG6JqNpMbRPYe6A9WSNzFZhYfrbZjKRr8YYoah8WbREyjgsNgOrQzKvocti58SM\nbnXWbQGS0oCAGSrECRsdxWY6\n-----END PRIVATE KEY-----\n",
+  "client_email": "calendar-key@seismic-relic-390010.iam.gserviceaccount.com",
+  "client_id": "104474023451181961751",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/calendar-key%40seismic-relic-390010.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

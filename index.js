@@ -56,18 +56,16 @@ app.post("/createEvent",(req,res)=>{
     const phoneNumber = formData['contact'];
     const eventDate = formData['event-date'];
 
-    console.log(numberPeople);
-
     const event = {
         'summary': `Event for ${numberPeople} people (${selectedPackage})`,
         'location': 'Zagreb, Croatia',
         'description': `Event for ${numberPeople} people with the ${selectedPackage} package. Contact: ${emailContact}, Phone: ${phoneNumber}`,
         'start': {
-            'dateTime': `${eventDate}${eventStart}:00+07:00`,
+            'dateTime': `${eventDate}T${eventStart}:00+07:00`,
             'timeZone': 'Europe/Berlin',
         },
         'end': {
-            'dateTime': `${eventDate}${eventStart}:00+07:00`,
+            'dateTime': `${eventDate}T${eventStart}:00+07:30`,
             'timeZone': 'Europe/Berlin',
         },
         'attendees': [],
@@ -82,7 +80,7 @@ app.post("/createEvent",(req,res)=>{
     
     const auth = new google.auth.GoogleAuth({
         scopes: 'https://www.googleapis.com/auth/calendar',
-        keyFile: 'C:/Users/User/Desktop/zavrshni/seismic-relic-390010-69423f3e809f.json'
+        keyFile: 'C:/Users/User/Desktop/karlo/seismic-relic-390010-69423f3e809f.json'
     });
     auth.getClient().then(a=>{
       calendar.events.insert({

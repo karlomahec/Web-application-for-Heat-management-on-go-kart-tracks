@@ -1,3 +1,5 @@
+**A video showcasing the app: https://youtu.be/uTWfopJ3xq4**
+
 ![Snimka zaslona 2024-11-17 174404](https://github.com/user-attachments/assets/c7382d43-f989-4907-9613-db7fad098ca5)
 ![Snimka zaslona 2024-11-17 174353](https://github.com/user-attachments/assets/839a302f-8391-4415-85f3-89d29b70db13)
 ![Snimka zaslona 2024-11-17 174345](https://github.com/user-attachments/assets/d01381f3-fff1-4bbe-8aab-231a3257b584)
